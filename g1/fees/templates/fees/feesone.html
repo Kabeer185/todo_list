@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+    </style>
+    <link rel="stylesheet" href="{%static 'fees/css/style.css' %}">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>fees {{cname}} ={{charge}}</h1>
+    <img src="{%static 'fees/images/img2.jpg' %}" alt="Django">
+    <img src="{%get_static_prefix %}fees/images/img2.jpg" alt="Django">
+    <hr>
+    <form action=""><input type="button" value="click me" onclick="disp()"></form>
+    <script src="{%static 'fees/js/all.js' %}"></script>
+</body>
+</html>

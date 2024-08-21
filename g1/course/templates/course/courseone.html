@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+    <link rel="stylesheet" href="{%static 'course/css/style.css'%}">
+    <title>{{ title}}</title>
+</head>
+<body>
+    <h1>start learnig{{cname}}  </h1>
+    <img src="{%static 'course/images/img1.jpg' %}" alt="Django">
+    <img src="{%get_static_prefix%}course/images/img1.jpg" alt="Django">
+    <hr>
+    <form action=""> <input type="button" value="click me " onclick="disp()"></form>
+    <script src="{%static 'course/js/all.js' %}"></script>
+</body>
+</html>
